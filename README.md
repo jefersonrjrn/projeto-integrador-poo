@@ -29,18 +29,20 @@ _Imagem conceitual da tela de Login da JOS University, demonstrando o design da 
 
 ## 📝 Sobre o Projeto
 
-Este repositório documenta a primeira etapa de um Projeto Integrador desenvolvido para a disciplina de Análise de Sistemas, com foco primordial na **modelagem de um sistema orientado a objetos** para a **gestão de dados de uma universidade fictícia, a JOS University**. O objetivo central desta fase foi estabelecer a estrutura conceitual e operacional do sistema, abordando a administração de diferentes tipos de usuários e entidades que interagem com a instituição de ensino.
+Este repositório documenta a primeira e segunda etapa de um Projeto Integrador desenvolvido para a disciplina de Análise de Sistemas, com foco primordial na **modelagem de um sistema orientado a objetos** para a **gestão de dados de uma universidade fictícia, a JOS University**. O objetivo central da primeira fases foi estabelecer a estrutura conceitual e operacional do sistema, abordando a administração de diferentes tipos de usuários e entidades que interagem com a instituição de ensino.
 
 A modelagem foi meticulosamente elaborada seguindo os princípios da Orientação a Objetos e utilizando a notação padrão da UML (Unified Modeling Language), garantindo uma representação clara e robusta dos elementos do sistema e seus relacionamentos. Este documento não apenas descreve a arquitetura proposta, mas também detalha os casos de uso e protótipos de interface que visualizam a interação do usuário com o sistema.
 
 Como destacado na *Introdução* do documento:
 > "Este documento apresenta a execução prática da primeira etapa do Projeto Integrador da disciplina de Análise de Sistemas, com foco na modelagem de um sistema orientado a objetos. O tema dessa entrega é a gestão de dados de uma universidade, abordando os cadastros de diferentes tipos de pessoas que interagem com o sistema, como alunos, professores, fornecedores, pessoas físicas e jurídicas."
 
+Na segunda fase, foi criado um protótipo do sistema para demonstrar como ficaria implementado na prática a modelagem feita na primeira etapa, com a criação das telas da interface de usuário através da ferramenta Figma.
+
 O projeto visa criar uma base sólida para um sistema de gestão universitária eficiente e escalável, com ênfase na reutilização de código e facilidade de manutenção, características cruciais em projetos de software modernos.
 
 ## Objetivo
 
-O principal objetivo desta primeira entrega foi a modelagem conceitual de um sistema de cadastro e gestão de pessoas dentro de um contexto universitário. Isso incluiu a definição clara das entidades, suas interações e as funcionalidades essenciais para gerenciar informações de alunos, professores, fornecedores, e pessoas físicas/jurídicas em geral. A ideia é estabelecer um alicerce robusto para o desenvolvimento futuro de uma aplicação completa.
+Os principais objetivos da primeria e segunda entrega foram a modelagem conceitual de um sistema de cadastro e gestão de pessoas dentro de um contexto universitário, e a criação de um protótipo com a implementação desse sistema. Isso incluiu a definição clara das entidades, suas interações e as funcionalidades essenciais para gerenciar informações de alunos, professores, fornecedores, e pessoas físicas/jurídicas em geral. A ideia é estabelecer um alicerce robusto para o desenvolvimento futuro de uma aplicação completa.
 
 ## Funcionalidades Principais
 
@@ -81,6 +83,8 @@ As relações entre os casos de uso são notáveis pela extensão de funcionalid
 > ● O caso "Cadastrar Fornecedor" estende "Cadastrar Pessoa Jurídica"."
 
 Esta estrutura de herança nos casos de uso sugere uma arquitetura modular e eficiente, onde as funcionalidades mais específicas (Aluno, Professor, Fornecedor) reusam a lógica de cadastro de entidades genéricas (Pessoa Física, Pessoa Jurídica).
+
+![Diagrama de casos de uso](images/diagrama_caso_de_uso.png)
 
 ### Cenários dos Casos de Uso
 
@@ -146,31 +150,48 @@ Conforme descrito na seção *Diagrama de Classes (UML)*:
 
 Esta abordagem de herança, com `Pessoa` como classe base, garante a reutilização de código e a manutenção facilitada, alinhando-se aos princípios da Orientação a Objetos. Classes como `PessoaFisica`, `PessoaJuridica`, `Aluno`, `Professor` e `Fornecedor` provavelmente herdarão ou terão associações com essa classe abstrata, permitindo uma modelagem flexível e extensível.
 
+![Diagrama de classes](images/diagrama_de_classes.png)
+
 ## Protótipos de Interface (Figma)
 
 Para complementar a modelagem e visualizar a experiência do usuário, foram desenvolvidos protótipos de interface utilizando a ferramenta Figma. A universidade fictícia para a qual o sistema foi projetado é a **JOS University**.
 
 Os protótipos incluem as seguintes telas, demonstrando o fluxo de interação do usuário:
 
-*   **Tela de Login**: O ponto de entrada do sistema.
-*   **Tela da Área Logada - Menu de Cadastros**: O painel principal após o login, com opções para acessar os diferentes módulos de cadastro.
-*   **Tela de Cadastro de Pessoa Física**: Interface para o registro de indivíduos.
-*   **Tela de Cadastro de Pessoa Jurídica**: Interface para o registro de empresas.
-*   **Tela de Cadastro de Aluno**: Interface para associar e cadastrar alunos.
-*   **Tela de Cadastro de Professor**: Interface para associar e cadastrar professores.
-*   **Tela de Cadastro para Fornecedor**: Interface para associar e cadastrar fornecedores.
-*   **Tela de Busca de Cadastro**: Uma tela para pesquisar e gerenciar cadastros existentes.
+*   [**Tela de Login**](images/login.png): O ponto de entrada do sistema.
+![**Tela de Login**](images/login.png)
+
+*   [**Tela da Área Logada - Menu de Cadastros**](images/area_logada.png): O painel principal após o login, com opções para acessar os diferentes módulos de cadastro.
+![**Tela da Área Logada - Menu de Cadastros**](images/area_logada.png)
+
+*   [**Tela de Cadastro de Pessoa Física**](images/pessoa_fisica.png): Interface para o registro de indivíduos.
+![**Tela de Cadastro de Pessoa Física**](images/pessoa_fisica.png)
+
+*   [**Tela de Cadastro de Pessoa Jurídica**](images/pessoa_juridica.png): Interface para o registro de empresas.
+![**Tela de Cadastro de Pessoa Jurídica**](images/pessoa_juridica.png)
+
+*   [**Tela de Cadastro de Aluno**](images/aluno.png): Interface para associar e cadastrar alunos.
+![**Tela de Cadastro de Aluno**](images/aluno.png)
+
+*   [**Tela de Cadastro de Professor**](images/professor.png): Interface para associar e cadastrar professores.
+![**Tela de Cadastro de Professor**](images/professor.png)
+
+*   [**Tela de Cadastro para Fornecedor**](images/fornecedor.png): Interface para associar e cadastrar fornecedores.
+![**Tela de Cadastro para Fornecedor**](images/fornecedor.png)
+
+*   [**Tela de Busca de Cadastro**](images/cadastro.png): Uma tela para pesquisar e gerenciar cadastros existentes.
+![**Tela de Busca de Cadastro**](images/cadastro.png)
 
 Esses protótipos são cruciais para validar o design da solução e a usabilidade do sistema, permitindo que as partes interessadas visualizem como o sistema funcionará antes mesmo de qualquer linha de código ser implementada. Embora as imagens não estejam diretamente neste README, a menção delas e seu propósito é vital para a documentação do projeto.
 
-## Conclusão da Primeira Entrega
+## Conclusão
 
 A primeira entrega deste Projeto Integrador solidificou a base conceitual para o desenvolvimento de um sistema de cadastro e gestão de pessoas em um ambiente universitário. A utilização de conceitos de Orientação a Objetos e UML permitiu uma modelagem clara e eficiente, focada na reutilização de código, facilidade de manutenção e clareza na visualização da arquitetura do sistema.
 
 Conforme a *Conclusão* do documento:
 > "Este projeto representa um sistema simples de cadastro e gestão de pessoas em uma universidade, utilizando conceitos de orientação de objetos e UML. A modelagem foi pensada para garantir reutilização de código, facilidade de manutenção e clareza na visualização, características fundamentais em projetos de software modernos."
 
-Além disso, a criação dos protótipos de interface no Figma serviu como uma ferramenta valiosa para explorar o design da solução e prever a interação do usuário, garantindo que o desenvolvimento futuro seja guiado por uma experiência de usuário bem planejada. Esta fase demonstra um planejamento robusto e uma compreensão aprofundada dos requisitos do sistema.
+Além disso, na segunda entrega, a criação dos protótipos de interface no Figma serviu como uma ferramenta valiosa para explorar o design da solução e prever a interação do usuário, garantindo que o desenvolvimento futuro seja guiado por uma experiência de usuário bem planejada. Esta fase demonstra um planejamento robusto e uma compreensão aprofundada dos requisitos do sistema.
 
 ## Próximos Passos
 
