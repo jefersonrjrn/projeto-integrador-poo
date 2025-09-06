@@ -159,13 +159,28 @@ Para complementar a modelagem e visualizar a experiência do usuário, foram des
 Os protótipos incluem as seguintes telas, demonstrando o fluxo de interação do usuário:
 
 *   [**Tela de Login**](images/login.png): O ponto de entrada do sistema.
+![**Tela de Login**](images/login.png)
+
 *   [**Tela da Área Logada - Menu de Cadastros**](images/area_logada.png): O painel principal após o login, com opções para acessar os diferentes módulos de cadastro.
+![**Tela da Área Logada - Menu de Cadastros**](images/area_logada.png)
+
 *   [**Tela de Cadastro de Pessoa Física**](images/pessoa_fisica.png): Interface para o registro de indivíduos.
+![**Tela de Cadastro de Pessoa Física**](images/pessoa_fisica.png)
+
 *   [**Tela de Cadastro de Pessoa Jurídica**](images/pessoa_juridica.png): Interface para o registro de empresas.
+![**Tela de Cadastro de Pessoa Jurídica**](images/pessoa_juridica.png)
+
 *   [**Tela de Cadastro de Aluno**](images/aluno.png): Interface para associar e cadastrar alunos.
+![**Tela de Cadastro de Aluno**](images/aluno.png)
+
 *   [**Tela de Cadastro de Professor**](images/professor.png): Interface para associar e cadastrar professores.
+![**Tela de Cadastro de Professor**](images/professor.png)
+
 *   [**Tela de Cadastro para Fornecedor**](images/fornecedor.png): Interface para associar e cadastrar fornecedores.
+![**Tela de Cadastro para Fornecedor**](images/fornecedor.png)
+
 *   [**Tela de Busca de Cadastro**](images/cadastro.png): Uma tela para pesquisar e gerenciar cadastros existentes.
+![**Tela de Busca de Cadastro**](images/cadastro.png)
 
 Esses protótipos são cruciais para validar o design da solução e a usabilidade do sistema, permitindo que as partes interessadas visualizem como o sistema funcionará antes mesmo de qualquer linha de código ser implementada. Embora as imagens não estejam diretamente neste README, a menção delas e seu propósito é vital para a documentação do projeto.
 
