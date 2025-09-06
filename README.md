@@ -84,6 +84,8 @@ As relações entre os casos de uso são notáveis pela extensão de funcionalid
 
 Esta estrutura de herança nos casos de uso sugere uma arquitetura modular e eficiente, onde as funcionalidades mais específicas (Aluno, Professor, Fornecedor) reusam a lógica de cadastro de entidades genéricas (Pessoa Física, Pessoa Jurídica).
 
+![Diagrama de casos de uso](images/diagrama_caso_de_uso.png)
+
 ### Cenários dos Casos de Uso
 
 Cada caso de uso foi detalhado com cenários principal e alternativos, descrevendo o fluxo de interação e as validações do sistema.
@@ -147,6 +149,8 @@ Conforme descrito na seção *Diagrama de Classes (UML)*:
 > "Criamos uma classe abstrata “Pessoa” com atributos comuns, como email e telefone, para que fosse possível a reutilização. A ideia é que outras classes possam herdar dessa classe abstrata e ter um estrutura que favorece a reutilização de código, e que facilita a manutenção do sistema."
 
 Esta abordagem de herança, com `Pessoa` como classe base, garante a reutilização de código e a manutenção facilitada, alinhando-se aos princípios da Orientação a Objetos. Classes como `PessoaFisica`, `PessoaJuridica`, `Aluno`, `Professor` e `Fornecedor` provavelmente herdarão ou terão associações com essa classe abstrata, permitindo uma modelagem flexível e extensível.
+
+![Diagrama de classes](images/diagrama_de_classes.png)
 
 ## Protótipos de Interface (Figma)
 
